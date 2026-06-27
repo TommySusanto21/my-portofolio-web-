@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Tommy Susanto</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SIDEBAR NAV
+       ================================================ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-text">TS</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#home"         class="nav-item active" data-section="home">
+        <i class="fa-solid fa-house"></i><span>Home</span>
+      </a>
+      <a href="#about"        class="nav-item" data-section="about">
+        <i class="fa-solid fa-user"></i><span>Bio</span>
+      </a>
+      <a href="#skills"       class="nav-item" data-section="skills">
+        <i class="fa-solid fa-code"></i><span>Skills</span>
+      </a>
+      <a href="#projects"     class="nav-item" data-section="projects">
+        <i class="fa-solid fa-diagram-project"></i><span>Projects</span>
+      </a>
+      <a href="#experience"   class="nav-item" data-section="experience">
+        <i class="fa-solid fa-briefcase"></i><span>Experience</span>
+      </a>
+      <a href="#certificates" class="nav-item" data-section="certificates">
+        <i class="fa-solid fa-certificate"></i><span>Achievement</span>
+      </a>
+      <a href="#contact"      class="nav-item" data-section="contact">
+        <i class="fa-solid fa-envelope"></i><span>Contact</span>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="https://github.com"   target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </aside>
+
+  <!-- ================================================
+       MOBILE TOPBAR
+       ================================================ -->
+  <header class="topbar" id="topbar">
+    <span class="logo-text">TS</span>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ================================================
+       MOBILE DRAWER
+       ================================================ -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="drawer-nav">
+      <a href="#home"         class="nav-item" data-section="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="#about"        class="nav-item" data-section="about"><i class="fa-solid fa-user"></i><span>Bio</span></a>
+      <a href="#skills"       class="nav-item" data-section="skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+      <a href="#projects"     class="nav-item" data-section="projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a>
+      <a href="#experience"   class="nav-item" data-section="experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a>
+      <a href="#certificates" class="nav-item" data-section="certificates"><i class="fa-solid fa-certificate"></i><span>Certificates</span></a>
+      <a href="#contact"      class="nav-item" data-section="contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ================================================
+       MAIN CONTENT
+       ================================================ -->
+  <main class="main-content">
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section id="home" class="section hero-section">
+
+      <div class="hero-left reveal">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Available for Opportunities
+        </div>
+        <p class="greeting">Halo, saya</p>
+        <h1 class="hero-name">Tommy Susanto</h1>
+        <p class="hero-role">
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          Mahasiswa S1 Teknik Informatika Universitas Maritim Raja Ali Haji.
+          Tertarik pada teknologi, pengembangan digital, dan kolaborasi tim.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/TommySusanto21"                      target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tommy-susanto-56554040b?utm_source=share_via&utm_content=profile&utm_medium=member_android"   target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:tommysusanto241521@gmail.com"      aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="profile-wrapper">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="profile-glow"></div>
+          <div class="profile-img-wrap">
+            <img src="assets/foto profil.png" alt="Tommy Susanto" class="profile-img"
+                 onerror="this.style.display='none'" />
+            <div class="profile-placeholder"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="floating-particle p1"></div>
+          <div class="floating-particle p2"></div>
+          <div class="floating-particle p3"></div>
+          <div class="floating-particle p4"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================
+         ABOUT
+         ============================================ -->
+    <section id="about" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-cards">
+
+          <div class="glass-card reveal">
+            <div class="card-icon-sm"><i class="fa-solid fa-id-card"></i></div>
+            <h3>Perkenalan</h3>
+            <p>Mahasiswa S1 Program Studi Teknik Informatika dengan minat di bidang teknologi dan
+              pengembangan digital. Memiliki pengalaman dalam proyek akademik, mampu bekerja dalam tim,
+              serta memiliki kemampuan dasar pengembangan perangkat lunak dan problem solving. Aktif
+              dalam berbagai olahraga, terutama basket yang membentuk disiplin, kerja sama tim, dan
+              manajemen waktu.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <div class="card-icon-sm"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Pendidikan</h3>
+            <p>
+              <strong>Teknik Informatika</strong><br />
+              Universitas Maritim Raja Ali Haji (UMRAH)<br />
+              <span class="tag-small">2023 – Sekarang</span>
+            </p>
+            <br />
+            <p>
+              <strong>SMAN 5 Tanjungpinang</strong><br />
+              <span class="tag-small">2020 – 2023</span>
+            </p>
+          </div>
+
+          <div class="about-two-col">
+            <div class="glass-card reveal">
+              <div class="card-icon-sm"><i class="fa-solid fa-heart"></i></div>
+              <h3>Hobi</h3>
+              <ul class="tag-list">
+                <li>Bola Basket</li>
+                <li>Web Development</li>
+                <li>Teknologi</li>
+              </ul>
+            </div>
+            <div class="glass-card reveal">
+              <div class="card-icon-sm"><i class="fa-solid fa-crosshairs"></i></div>
+              <h3>Fokus</h3>
+              <ul class="tag-list">
+                <li>Pengembangan Web</li>
+                <li>Informatika</li>
+                <li>Digital Kreatif</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-image reveal">
+          <div class="about-img-card">
+            <div class="about-img-glow"></div>
+            <i class="fa-solid fa-laptop-code about-img-icon"></i>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num">6</span><span class="stat-label">Proyek</span></div>
+              <div class="stat"><span class="stat-num">1</span><span class="stat-label">Organisasi</span></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         SKILLS
+         ============================================ -->
+    <section id="skills" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-item reveal"><img src="assets/icons/html5.svg"       alt="HTML5"       /><span>HTML5</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/css3.svg"        alt="CSS3"        /><span>CSS3</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/js.svg"          alt="JavaScript"  /><span>JavaScript</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/php.svg"         alt="PHP"         /><span>PHP</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/mysql.svg"       alt="MySQL"       /><span>MySQL</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/git.svg"         alt="Git"         /><span>Git</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/figma.svg"       alt="Figma"       /><span>Figma</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/python.svg"      alt="Python"      /><span>Python</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/cplusplus.svg"   alt="C/C++"       /><span>C/C++</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/dart.svg"        alt="Dart"        /><span>Dart</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/laravel.svg"     alt="Laravel"     /><span>Laravel</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/codeigniter.svg" alt="CodeIgniter" /><span>CodeIgniter</span></div>
+        <div class="tech-item reveal"><img src="assets/icons/flutter.svg"     alt="Flutter"     /><span>Flutter</span></div>
+        <div class="tech-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>REST API</span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================
+         PROJECTS
+         ============================================ -->
+    <section id="projects" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 1.jpeg" alt="Proyek 1" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">OceanLens – Aplikasi Agregator Berita Mobile</h3>
+            <p class="project-desc">Mengembangkan OceanLens, aplikasi mobile agregator berita yang mengintegrasikan berita dari berbagai media online dalam satu platform. Aplikasi ini dilengkapi fitur pengelompokan topik, analisis sentimen berbasis machine learning, serta ringkasan berita untuk membantu pengguna memperoleh informasi secara lebih cepat dan mudah dipahami.</p>
+            
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 2.png" alt="Proyek 2" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">OILSARAI – Segmentasi Tumpahan Minyak Menggunakan Deep Learning</h3>
+            <p class="project-desc">Mengembangkan OILSARAI, aplikasi berbasis web untuk mendeteksi dan melakukan segmentasi tumpahan minyak pada citra Synthetic Aperture Radar (SAR) menggunakan metode deep learning. Sistem ini memungkinkan pengguna mengunggah citra SAR, menjalankan proses segmentasi, serta membandingkan hasil dari beberapa model seperti U-Net, U-Net++, dan DeepLabV3+.</p>
+            
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 3.jpeg" alt="Proyek 3" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Website Destinasi Wisata Maritim</h3>
+            <p class="project-desc">Mengembangkan website destinasi wisata maritim sebagai proyek mata kuliah Interaksi Manusia dan Komputer (IMK). Website ini dirancang untuk memperkenalkan berbagai destinasi wisata bahari di Provinsi Kepulauan Riau dengan antarmuka yang menarik, responsif, dan mudah digunakan oleh pengguna.</p>
+            
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 4.jpeg" alt="Proyek 4" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">SILADAS – Sistem Layanan Daftar Arsip Statis</h3>
+            <p class="project-desc">Mengembangkan SILADAS, sistem informasi berbasis web untuk layanan daftar arsip statis selama menjalani program magang di Dinas Perpustakaan dan Kearsipan Kota Tanjungpinang. Sistem ini memudahkan pengguna dalam mencari, mengakses, dan menelusuri informasi arsip statis secara cepat dan efisien..</p>
+           
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 5.png" alt="Proyek 5" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AR Wayfinding</h3>
+            <p class="project-desc">AR Wayfinding merupakan aplikasi berbasis Augmented Reality (AR) yang dikembangkan untuk membantu pengguna menemukan lokasi penting di lingkungan SMAN 5 Tanjungpinang secara lebih mudah dan interaktif. Aplikasi ini memanfaatkan teknologi AR untuk memberikan petunjuk arah menuju fasilitas seperti toilet, ruang guru, dan kantin melalui perangkat smartphone.</p>
+           
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/projek 6.jpeg" alt="Proyek 6" class="project-img" />
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Mesin Turing
+</h3>
+            <p class="project-desc">Simulasi Mesin Turing matematika sederhana untuk operasi penjumlahan dan pengurangan yang berhasil dijalankan dengan baik.</p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         EXPERIENCE
+         ============================================ -->
+    <section id="experience" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Perjalanan Saya</span>
+        <h2 class="section-title">Pengalaman</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type internship">Magang</span>
+            <h3>Bidang Pengembangan</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> Dinas Perpustakaan dan Kearsipan Kota Tanjungpinang</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Januari – Maret 2026</p>
+            <p>Mengelola data IPLM (Indeks Pembangunan Literasi Masyarakat) · Membuat sistem berbasis web
+              untuk pencarian arsip statis · Mengelola data penyiangan dan pemusnahan buku ·
+              Membuat Google Form untuk pendaftaran lomba-lomba yang dilaksanakan perpustakaan.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type internship">Magang</span>
+            <h3>Pelayanan Administrasi &amp; Pendaftaran</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> Kantor Pelayanan Pajak Pratama Bintan</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Maret – Mei 2024</p>
+            <p>Pelayanan Administrasi &amp; Pendaftaran — membantu proses administrasi dan
+              pendaftaran wajib pajak di kantor pelayanan pajak pratama.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type organization">Organisasi</span>
+            <h3>Ketua Divisi HUMAS</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> UKM Basket UMRAH</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Januari 2025 – 2026</p>
+            <p>Mengatur jadwal latihan dan sparing · Memberi informasi seputar UKM, latihan, dan sparing ·
+              Terlibat dalam kegiatan sosial seperti gotong royong dan berbagi takjil setiap bulan Ramadhan.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type committee">Panitia Event</span>
+            <h3>Ketua Divisi Perlengkapan Lapangan — GURINDAM CUP 2025</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> UKM Basket UMRAH</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> 2025</p>
+            <p>Menyiapkan keperluan event · Mengatur tata letak perlengkapan ·
+              Menjaga keamanan dan keberlangsungan event.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type committee">Panitia Event</span>
+            <h3>Anggota HUMAS — GURINDAM CUP 2024</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> UKM Basket UMRAH</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> 6 – 12 Oktober 2024</p>
+            <p>Mencari sponsor untuk pelaksanaan event · Mengantar surat peminjaman barang ·
+              Melakukan audiensi · Mewawancarai volunteer.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type organization">Organisasi</span>
+            <h3>Anggota Aktif UKM Basket</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> UKM Basket UMRAH</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Oktober 2023 – Sekarang</p>
+            <p>Bergabung dengan UKM Basket UMRAH karena hobi bermain basket, aktif berlatih,
+              mengikuti turnamen, dan berkontribusi pada perkembangan organisasi.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-type project">Proyek Akademik</span>
+            <h3>Mahasiswa Teknik Informatika</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> Universitas Maritim Raja Ali Haji</p>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 – Sekarang</p>
+            <p> Aktif belajar pengembangan web dan dasar-dasar informatika.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         CERTIFICATES
+         ============================================ -->
+    <section id="certificates" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Kegiatan &amp; Prestasi</span>
+        <h2 class="section-title">Aktivitas &amp; Pencapaian</h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="cert-body">
+            <h3>Kuliah &amp; Proyek Bersama</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> UMRAH — Teknik Informatika</p>
+            <span class="cert-year">2023 – Skrg</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-medal"></i></div>
+          <div class="cert-body">
+            <h3>Juara 1 Internal Cup Basketball 2023</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> UKM Basket UMRAH</p>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-basketball"></i></div>
+          <div class="cert-body">
+            <h3>Mengikuti Pertandingan Perbasi Cup 2024–2025</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> UKM Basket UMRAH</p>
+            <span class="cert-year">2024 – 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-people-group"></i></div>
+          <div class="cert-body">
+            <h3>Anggota Aktif UKM Basket UMRAH</h3>
+            <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> UKM Basket UMRAH</p>
+            <span class="cert-year">2023 – Skrg</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT
+         ============================================ -->
+    <section id="contact" class="section">
+
+      <div class="section-header reveal">
+        <span class="section-tag">Hubungi Saya</span>
+        <h2 class="section-title">Kontak</h2>
+        <p class="section-sub">Mari membangun sesuatu yang hebat bersama!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <a href="mailto:tommysusanto241521@gmail.com" class="contact-card glass-card reveal">
+          <div class="contact-icon email"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-info"><h3>Email</h3><p>tommysusanto241521@gmail.com</p></div>
+          <i class="fa-solid fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tommy-susanto-56554040b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-card glass-card reveal">
+          <div class="contact-icon linkedin"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="contact-info"><h3>LinkedIn</h3><p>tommy-susanto</p></div>
+          <i class="fa-solid fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="https://github.com/TommySusanto21" target="_blank" class="contact-card glass-card reveal">
+          <div class="contact-icon github"><i class="fa-brands fa-github"></i></div>
+          <div class="contact-info"><h3>GitHub</h3><p>TommySusanto21</p></div>
+          <i class="fa-solid fa-arrow-right contact-arrow"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-name">Tommy Susanto</p>
+        <p class="footer-copy">&copy; 2026 Tommy Susanto. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/TommySusanto21"                   target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tommy-susanto-56554040b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:tommysusanto241521@gmail.com"   aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </main><!-- /main-content -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
