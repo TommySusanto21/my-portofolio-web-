@@ -1176,16 +1176,44 @@ body::before {
 @media (max-width: 640px) {
   .section { padding: 4rem 1.1rem; }
 
-  /* Hero */
-  .hero-right { display: none; }
-  .hero-name  { font-size: clamp(2rem, 10vw, 3rem); }
-  .hero-role  { font-size: 1rem; }
-  .hero-desc  { font-size: 0.93rem; }
+  /* Hero — foto tetap tampil, layout vertikal: foto atas, teks bawah */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2.5rem;
+    gap: 1.75rem;
+  }
+
+  /* Foto di atas */
+  .hero-right {
+    display: flex;
+    order: -1;
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Perkecil ukuran profile wrapper di mobile */
+  .profile-wrapper    { width: 200px; height: 200px; }
+  .orbit-1            { width: 175px; height: 175px; }
+  .orbit-2            { width: 210px; height: 210px; }
+  .profile-img-wrap   { width: 130px; height: 130px; }
+  .profile-glow       { width: 150px; height: 150px; }
+
+  /* Teks hero rata tengah */
+  .hero-left  { width: 100%; order: 1; }
+  .hero-desc  { font-size: 0.93rem; margin: 0 auto 1.5rem; max-width: 100%; }
   .hero-btns  { flex-direction: column; align-items: center; }
   .btn        { width: 100%; max-width: 280px; justify-content: center; }
+  .hero-socials { justify-content: center; }
+  .status-badge { display: inline-flex; }
+
+  .hero-name  { font-size: clamp(1.9rem, 9vw, 2.8rem); }
+  .hero-role  { font-size: 1rem; }
 
   /* Section header */
-  .section-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+  .section-title  { font-size: clamp(1.6rem, 7vw, 2.2rem); }
   .section-header { margin-bottom: 2.25rem; }
 
   /* About */
@@ -1235,6 +1263,13 @@ body::before {
 
   .hero-name  { font-size: 1.9rem; }
   .status-badge { font-size: 0.74rem; padding: 0.3rem 0.8rem; }
+
+  /* Foto profil lebih kecil lagi di HP sangat kecil */
+  .profile-wrapper  { width: 160px; height: 160px; }
+  .orbit-1          { width: 140px; height: 140px; }
+  .orbit-2          { width: 168px; height: 168px; }
+  .profile-img-wrap { width: 108px; height: 108px; }
+  .profile-glow     { width: 120px; height: 120px; }
 
   .glass-card { padding: 1.1rem; }
 
